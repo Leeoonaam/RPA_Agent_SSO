@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Autenticacao_Usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Autenticacao_UsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Autenticacao_UsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Registra_Tempo_Usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sCommand" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Registra_Tempo_UsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Registra_Tempo_UsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Criptografia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCommand" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CriptografiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CriptografiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ping_Localizacao_Usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sCommand" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ping_Localizacao_UsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ping_Localizacao_UsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Rel_Tempo_Usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sCommand" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Rel_Tempo_UsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Rel_Tempo_UsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Rota_Usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sCommand" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Rota_UsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Rota_UsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Autenticacao_UsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Autenticacao_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="Autenticacao_UsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Autenticacao_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Registra_Tempo_UsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Registra_Tempo_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="Registra_Tempo_UsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Registra_Tempo_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CriptografiaSoapIn">
+    <wsdl:part name="parameters" element="tns:Criptografia" />
+  </wsdl:message>
+  <wsdl:message name="CriptografiaSoapOut">
+    <wsdl:part name="parameters" element="tns:CriptografiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ping_Localizacao_UsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Ping_Localizacao_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="Ping_Localizacao_UsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Ping_Localizacao_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Rel_Tempo_UsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Rel_Tempo_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="Rel_Tempo_UsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Rel_Tempo_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Rota_UsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Rota_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="Rota_UsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Rota_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_BCC_Autenticacao_UsuarioSoap">
+    <wsdl:operation name="Autenticacao_Usuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Responsavel por realizar a autenticação do usuário</wsdl:documentation>
+      <wsdl:input message="tns:Autenticacao_UsuarioSoapIn" />
+      <wsdl:output message="tns:Autenticacao_UsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Registra_Tempo_Usuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Responsavel por registrar o tempo do usuário</wsdl:documentation>
+      <wsdl:input message="tns:Registra_Tempo_UsuarioSoapIn" />
+      <wsdl:output message="tns:Registra_Tempo_UsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Criptografia">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Responsavel por Criptografar e descriptografar</wsdl:documentation>
+      <wsdl:input message="tns:CriptografiaSoapIn" />
+      <wsdl:output message="tns:CriptografiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Ping_Localizacao_Usuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Responsavel por registrar a localizacao do Usuario</wsdl:documentation>
+      <wsdl:input message="tns:Ping_Localizacao_UsuarioSoapIn" />
+      <wsdl:output message="tns:Ping_Localizacao_UsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Rel_Tempo_Usuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Responsavel pelo retorno do tempo do usuario</wsdl:documentation>
+      <wsdl:input message="tns:Rel_Tempo_UsuarioSoapIn" />
+      <wsdl:output message="tns:Rel_Tempo_UsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Rota_Usuario">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Responsavel pelo retorno da Rota do Usuário</wsdl:documentation>
+      <wsdl:input message="tns:Rota_UsuarioSoapIn" />
+      <wsdl:output message="tns:Rota_UsuarioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_BCC_Autenticacao_UsuarioSoap" type="tns:WS_BCC_Autenticacao_UsuarioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Autenticacao_Usuario">
+      <soap:operation soapAction="http://tempuri.org/Autenticacao_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Registra_Tempo_Usuario">
+      <soap:operation soapAction="http://tempuri.org/Registra_Tempo_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Criptografia">
+      <soap:operation soapAction="http://tempuri.org/Criptografia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ping_Localizacao_Usuario">
+      <soap:operation soapAction="http://tempuri.org/Ping_Localizacao_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rel_Tempo_Usuario">
+      <soap:operation soapAction="http://tempuri.org/Rel_Tempo_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rota_Usuario">
+      <soap:operation soapAction="http://tempuri.org/Rota_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_BCC_Autenticacao_UsuarioSoap12" type="tns:WS_BCC_Autenticacao_UsuarioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Autenticacao_Usuario">
+      <soap12:operation soapAction="http://tempuri.org/Autenticacao_Usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Registra_Tempo_Usuario">
+      <soap12:operation soapAction="http://tempuri.org/Registra_Tempo_Usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Criptografia">
+      <soap12:operation soapAction="http://tempuri.org/Criptografia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ping_Localizacao_Usuario">
+      <soap12:operation soapAction="http://tempuri.org/Ping_Localizacao_Usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rel_Tempo_Usuario">
+      <soap12:operation soapAction="http://tempuri.org/Rel_Tempo_Usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rota_Usuario">
+      <soap12:operation soapAction="http://tempuri.org/Rota_Usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_BCC_Autenticacao_Usuario">
+    <wsdl:port name="WS_BCC_Autenticacao_UsuarioSoap" binding="tns:WS_BCC_Autenticacao_UsuarioSoap">
+      <soap:address location="http://gatlink.com.br/wsbccgeo/WS_BCC_Autenticacao_Usuario.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_BCC_Autenticacao_UsuarioSoap12" binding="tns:WS_BCC_Autenticacao_UsuarioSoap12">
+      <soap12:address location="http://gatlink.com.br/wsbccgeo/WS_BCC_Autenticacao_Usuario.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

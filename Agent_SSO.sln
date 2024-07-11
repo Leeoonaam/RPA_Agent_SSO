@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent_SSO", "Agent_SSO\Agent_SSO.csproj", "{09B13BF9-2E6F-4C04-A71D-0B4A9518542C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09B13BF9-2E6F-4C04-A71D-0B4A9518542C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B13BF9-2E6F-4C04-A71D-0B4A9518542C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B13BF9-2E6F-4C04-A71D-0B4A9518542C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B13BF9-2E6F-4C04-A71D-0B4A9518542C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BF7B335-897E-441C-999F-6C910B48617A}
+	EndGlobalSection
+EndGlobal

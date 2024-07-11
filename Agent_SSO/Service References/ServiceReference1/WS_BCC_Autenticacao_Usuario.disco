@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://gatlink.com.br/wsbccgeo/WS_BCC_Autenticacao_Usuario.asmx?wsdl" docRef="http://gatlink.com.br/wsbccgeo/WS_BCC_Autenticacao_Usuario.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://gatlink.com.br/wsbccgeo/WS_BCC_Autenticacao_Usuario.asmx" xmlns:q1="http://tempuri.org/" binding="q1:WS_BCC_Autenticacao_UsuarioSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://gatlink.com.br/wsbccgeo/WS_BCC_Autenticacao_Usuario.asmx" xmlns:q2="http://tempuri.org/" binding="q2:WS_BCC_Autenticacao_UsuarioSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
